@@ -1,28 +1,26 @@
 <template>
-  <div
-    style="
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      grid-gap: 50px;
-    "
-  >
-    <avatar-editor
-      :width="400"
-      :height="400"
-      ref="avatarEditorRef"
-      @image-ready="onImageReady"
-      v-model:scale="scaleVal"
-    />
-    <input
-      type="range"
-      :min="scaleMin"
-      :max="scaleMax"
-      :step="scaleStep"
-      v-model="scaleVal"
-    />
-    <button @click="save">Save</button>
-  </div>
+  <v-row class="justify-center align-center items-center text-center">
+    <v-col cols="6">
+      <avatar-editor
+        :width="400"
+        :height="400"
+        border-radius="1000"
+        ref="avatarEditorRef"
+        @image-ready="onImageReady"
+        v-model:scale="scaleVal"
+      />
+    </v-col>
+    <v-col cols="6">
+      <v-slider
+        :min="scaleMin"
+        :max="scaleMax"
+        :step="scaleStep"
+        v-model="scaleVal"
+        color="orange"
+      />
+      <v-btn @click="save">Save</v-btn>
+    </v-col>
+  </v-row>
 </template>
 
 <script lang="ts" setup>

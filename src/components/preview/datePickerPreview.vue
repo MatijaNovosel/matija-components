@@ -1,21 +1,28 @@
 <template>
-  <div style="display: flex">
-    <matija-date-picker
-      multiple
-      :selected-items-text-formatter="(n) => `${n} dates selected`"
-      :first-day-of-week="1"
-      :allowed-dates="(date) => parseInt(date.split('-')[2], 10) % 2 === 0"
-      :locale="locale"
-      v-model="date"
-    />
-    <div style="margin-left: 30px">
-      {{ date }}
-      <button @click="changeDate" style="margin-left: 5px">Change</button>
-      <button @click="changeLocale" style="margin-left: 5px">
-        Change locale
-      </button>
-    </div>
-  </div>
+  <v-row class="justify-center align-center items-center text-center">
+    <v-col cols="6">
+      <matija-date-picker
+        class="mx-auto"
+        multiple
+        :selected-items-text-formatter="(n) => `${n} dates selected`"
+        :first-day-of-week="1"
+        :allowed-dates="(date) => parseInt(date.split('-')[2], 10) % 2 === 0"
+        :locale="locale"
+        v-model="date"
+      />
+    </v-col>
+    <v-col cols="6">
+      <v-text-field
+        density="compact"
+        hide-details
+        label="Value"
+        v-model="date"
+        readonly
+      />
+      <v-btn @click="changeDate"> Change </v-btn>
+      <v-btn @click="changeLocale"> Change locale </v-btn>
+    </v-col>
+  </v-row>
 </template>
 
 <script lang="ts" setup>

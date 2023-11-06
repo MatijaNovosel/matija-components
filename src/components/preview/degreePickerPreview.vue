@@ -1,12 +1,13 @@
 <template>
-  <v-row>
+  <v-row class="justify-center align-center">
     <v-col cols="6">
       <degree-picker
         :readonly="state.readonly"
         :disabled="state.disabled"
         class="mx-auto"
         v-model="state.degrees"
-        :active-color="state.color"
+        :active-color="state.activeColor"
+        :body-color="state.bodyColor"
       />
     </v-col>
     <v-col cols="6">
@@ -30,7 +31,14 @@
         density="compact"
         v-model="state.readonly"
       />
-      <v-color-picker class="mt-2" v-model="state.color" />
+      <v-row class="mt-2">
+        <v-color-picker
+          :modes="['hex']"
+          class="mr-4"
+          v-model="state.activeColor"
+        />
+        <v-color-picker :modes="['hex']" v-model="state.bodyColor" />
+      </v-row>
     </v-col>
   </v-row>
 </template>
@@ -42,6 +50,7 @@ const state = reactive({
   degrees: 0,
   disabled: false,
   readonly: false,
-  color: "#FF891D",
+  activeColor: "#FF891D",
+  bodyColor: "#F3F1F0",
 });
 </script>
