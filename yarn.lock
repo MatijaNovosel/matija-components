@@ -1650,6 +1650,15 @@ vue-eslint-parser@^9.0.0, vue-eslint-parser@^9.0.1:
     lodash "^4.17.21"
     semver "^7.3.6"
 
+vue-material-time-picker@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/vue-material-time-picker/-/vue-material-time-picker-0.0.8.tgz#94f8438fdbab2df49a2615d98551217daf384dac"
+  integrity sha512-03wopJBj7yVIw4uJsAjlPTqi8lGJ4UVUWJVSn3zhNPeLaUe0YCMyktB28dvV386SeRorYfbfhLxrxPr5iKWnPg==
+  dependencies:
+    "@vueuse/core" "^10.1.2"
+    sass "^1.62.1"
+    vue "^3.2.47"
+
 vue-router@^4.0.0:
   version "4.1.6"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-4.1.6.tgz#b70303737e12b4814578d21d68d21618469375a1"
