@@ -11,7 +11,12 @@
       />
     </v-col>
     <v-col cols="6">
+      <code-snippet
+        content="yarn add degree-picker"
+        link="https://github.com/MatijaNovosel/vue-degree-picker"
+      />
       <v-text-field
+        class="mt-4"
         density="compact"
         hide-details
         label="Value"
@@ -32,12 +37,8 @@
         v-model="state.readonly"
       />
       <v-row class="mt-2">
-        <v-color-picker
-          :modes="['hex']"
-          class="mr-4"
-          v-model="state.activeColor"
-        />
-        <v-color-picker :modes="['hex']" v-model="state.bodyColor" />
+        <v-color-picker hide-inputs class="mr-4" v-model="state.activeColor" />
+        <v-color-picker hide-inputs v-model="state.bodyColor" />
       </v-row>
     </v-col>
   </v-row>
@@ -45,6 +46,7 @@
 
 <script lang="ts" setup>
 import { reactive } from "vue";
+import codeSnippet from "../app/codeSnippet.vue";
 
 const state = reactive({
   degrees: 0,

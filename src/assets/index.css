@@ -23,3 +23,8 @@ html {
 .list-leave-to {
   animation: bounce 0.5s reverse;
 }
+
+@font-face {
+  font-family: "CascadiaCode";
+  src: url("/CascadiaCode.ttf");
+}

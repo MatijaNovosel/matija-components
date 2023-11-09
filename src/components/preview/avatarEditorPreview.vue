@@ -11,7 +11,12 @@
       />
     </v-col>
     <v-col cols="6">
+      <code-snippet
+        content="yarn add avatar-editor"
+        link="https://github.com/MatijaNovosel/avatar-editor"
+      />
       <v-slider
+        class="mt-5"
         :min="scaleMin"
         :max="scaleMax"
         :step="scaleStep"
@@ -25,6 +30,8 @@
 
 <script lang="ts" setup>
 import { onMounted, onUnmounted, ref } from "vue";
+import { base64ToFile, download } from "../../helpers";
+import codeSnippet from "../app/codeSnippet.vue";
 
 const scaleVal = ref<number>(1);
 const scaleStep = 0.02;
@@ -49,11 +56,14 @@ const handleWheelEvent = (e: WheelEvent) => {
   }
 };
 
-const save = () => {
+const save = async () => {
   if (avatarEditorRef.value) {
     const canvasData = avatarEditorRef.value.getImageScaled();
     const img = canvasData.toDataURL("image/png");
-    console.log(img);
+    const file = await base64ToFile(img, "image.png");
+    if (file) {
+      download(file);
+    }
   }
 };
 
