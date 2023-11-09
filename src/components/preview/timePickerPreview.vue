@@ -6,7 +6,7 @@
         :disabled="disabled"
         :use-seconds="useSeconds"
         :color="color"
-        class="mx-auto"
+        class="mx-auto elevation-1"
         v-model="time"
       />
     </v-col>

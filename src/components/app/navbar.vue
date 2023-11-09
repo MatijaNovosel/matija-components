@@ -2,7 +2,14 @@
   <v-app-bar>
     <v-list-item>
       <template #prepend>
-        <v-avatar class="me-10 ms-4" color="grey-darken-1" size="32" />
+        <v-btn
+          variant="text"
+          icon
+          class="mr-5"
+          href="https://github.com/MatijaNovosel"
+        >
+          <v-icon size="40"> mdi-github </v-icon>
+        </v-btn>
       </template>
       <v-list-item-title> Matija components </v-list-item-title>
       <v-list-item-subtitle> Try 'em out! </v-list-item-subtitle>

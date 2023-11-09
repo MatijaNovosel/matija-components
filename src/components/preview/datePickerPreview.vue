@@ -2,7 +2,7 @@
   <v-row class="justify-center align-center items-center text-center">
     <v-col cols="12" md="6">
       <matija-date-picker
-        class="mx-auto"
+        class="mx-auto elevation-1"
         :selected-items-text-formatter="(n) => `${n} dates selected`"
         :first-day-of-week="1"
         :show-adjacent-months="showAdjacentMonths"
