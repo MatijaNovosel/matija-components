@@ -46,7 +46,7 @@
         readonly
       />
       <v-select
-        class="mt-3"
+        class="my-3"
         :items="localeItems"
         hide-details
         density="compact"
