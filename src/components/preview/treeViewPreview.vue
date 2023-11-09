@@ -1,6 +1,6 @@
 <template>
   <v-row class="justify-center align-center items-center text-center">
-    <v-col cols="6">
+    <v-col cols="12" md="6">
       <matija-tree-view
         class="mx-auto"
         v-model="value"
@@ -13,7 +13,7 @@
         :dense="dense"
       />
     </v-col>
-    <v-col cols="6">
+    <v-col cols="12" md="6">
       <code-snippet
         content="yarn add vue-tree-view"
         link="https://github.com/MatijaNovosel/vue-tree-view"

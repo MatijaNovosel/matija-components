@@ -1,6 +1,6 @@
 <template>
   <v-row class="justify-center align-center">
-    <v-col cols="6">
+    <v-col cols="12" md="6">
       <degree-picker
         :readonly="state.readonly"
         :disabled="state.disabled"
@@ -10,7 +10,7 @@
         :body-color="state.bodyColor"
       />
     </v-col>
-    <v-col cols="6">
+    <v-col cols="12" md="6">
       <code-snippet
         content="yarn add degree-picker"
         link="https://github.com/MatijaNovosel/vue-degree-picker"

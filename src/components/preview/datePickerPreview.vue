@@ -1,9 +1,8 @@
 <template>
   <v-row class="justify-center align-center items-center text-center">
-    <v-col cols="6">
+    <v-col cols="12" md="6">
       <matija-date-picker
         class="mx-auto"
-        :multiple="multiple"
         :selected-items-text-formatter="(n) => `${n} dates selected`"
         :first-day-of-week="1"
         :show-adjacent-months="showAdjacentMonths"
@@ -17,7 +16,7 @@
         :max="maximum"
       />
     </v-col>
-    <v-col cols="6">
+    <v-col cols="12" md="6">
       <code-snippet
         content="yarn add vue-3-material-date-picker"
         link="https://github.com/MatijaNovosel/vue-3-material-date-picker"
@@ -53,13 +52,6 @@
         density="compact"
         label="Locale"
         v-model="locale"
-      />
-      <v-checkbox
-        class="mt-3"
-        hide-details
-        density="compact"
-        label="Multiple"
-        v-model="multiple"
       />
       <v-checkbox
         hide-details

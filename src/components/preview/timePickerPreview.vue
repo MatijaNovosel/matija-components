@@ -1,6 +1,6 @@
 <template>
   <v-row class="justify-center align-center items-center text-center">
-    <v-col cols="6">
+    <v-col cols="12" md="6">
       <matija-time-picker
         :readonly="readonly"
         :disabled="disabled"
@@ -10,7 +10,7 @@
         v-model="time"
       />
     </v-col>
-    <v-col cols="6">
+    <v-col cols="12" md="6">
       <code-snippet
         content="yarn add vue-material-time-picker"
         link="https://github.com/MatijaNovosel/vue-material-time-picker"
