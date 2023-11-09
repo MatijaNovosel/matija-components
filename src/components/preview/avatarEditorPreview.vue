@@ -4,7 +4,7 @@
       <avatar-editor
         :width="400"
         :height="400"
-        border-radius="1000"
+        :border-radius="borderRadiusScaleVal"
         ref="avatarEditorRef"
         @image-ready="onImageReady"
         v-model:scale="scaleVal"
@@ -21,9 +21,21 @@
         :max="scaleMax"
         :step="scaleStep"
         v-model="scaleVal"
+        hide-details
         color="orange"
+        label="Scale"
       />
-      <v-btn @click="save">Save</v-btn>
+      <v-slider
+        class="mt-5"
+        :min="borderRadiusScaleMin"
+        :max="borderRadiusScaleMax"
+        :step="borderRadiusScaleStep"
+        v-model="borderRadiusScaleVal"
+        hide-details
+        color="orange"
+        label="Border radius"
+      />
+      <v-btn class="mt-5" @click="save">Save</v-btn>
     </v-col>
   </v-row>
 </template>
@@ -37,6 +49,11 @@ const scaleVal = ref<number>(1);
 const scaleStep = 0.02;
 const scaleMin = 1;
 const scaleMax = 3;
+
+const borderRadiusScaleMin = 0;
+const borderRadiusScaleMax = 1000;
+const borderRadiusScaleStep = 25;
+const borderRadiusScaleVal = ref<number>(0);
 
 const avatarEditorRef = ref<any>(null);
 
