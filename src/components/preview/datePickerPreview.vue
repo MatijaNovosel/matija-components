@@ -108,12 +108,4 @@ const noTitle = ref(false);
 const color = ref("#FF891D");
 
 const localeItems = ["hr-HR", "en-US", "de-DE"];
-
-const changeDate = () => {
-  date.value = "2023-09-23";
-};
-
-const changeLocale = () => {
-  locale.value = "hr-HR";
-};
 </script>
