@@ -13,6 +13,8 @@
         v-model="date"
         :disabled="disabled"
         :readonly="readonly"
+        :min="minimum"
+        :max="maximum"
       />
     </v-col>
     <v-col cols="6">

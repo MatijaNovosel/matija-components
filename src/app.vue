@@ -14,7 +14,7 @@ const toastStore = useToastStore();
 
 onMounted(() => {
   toastStore.createToast({
-    msg: "✅ Application successfully started!",
+    msg: "✅ Hello!",
     color: "#16c60c",
     txtColor: "white",
     timeout: 5000,

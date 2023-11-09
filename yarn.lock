@@ -1674,6 +1674,22 @@ vue-template-compiler@^2.7.14:
     de-indent "^1.0.2"
     he "^1.2.0"
 
+vue-tree-view@^0.0.12:
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/vue-tree-view/-/vue-tree-view-0.0.12.tgz#ec4500a4537f172348372b90d5717d81249feed2"
+  integrity sha512-nsmXhniv+FkTgkqUnlE4KtoGeIk4yytSotkVaAG1oiHj45X7l4IpnbnnhEqWbUl9s3tORNquqAILeEYlk8xP/A==
+  dependencies:
+    "@vueuse/core" "^10.1.2"
+    vue "^3.2.47"
+
+vue-tri-state-checkbox@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/vue-tri-state-checkbox/-/vue-tri-state-checkbox-0.0.3.tgz#392469e5dc5c34031462faf68e4e14845e310926"
+  integrity sha512-KLU2BkGQ/ZYs43mkLpZmVKOssmMJlaYesJj8Q3OAGeONONTTvI3+0QPgBYtTsdQ60sWmCYhJpsnJ2TlJWmH4Dg==
+  dependencies:
+    sass "^1.62.1"
+    vue "^3.2.47"
+
 vue-tsc@^1.0.9:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/vue-tsc/-/vue-tsc-1.2.0.tgz#2b64b960cc96208492541394423ace589a461be6"
