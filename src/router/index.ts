@@ -12,36 +12,36 @@ const routes = [
         component: () => import("@/views/home.vue"),
         children: [
           {
-            path: "avatar-editor",
+            path: "/avatar-editor",
             name: "avatar-editor",
             component: () =>
               import("@/components/preview/avatarEditorPreview.vue"),
           },
           {
-            path: "degree-picker",
+            path: "/degree-picker",
             name: "degree-picker",
             component: () =>
               import("@/components/preview/degreePickerPreview.vue"),
           },
           {
-            path: "date-picker",
+            path: "/date-picker",
             name: "date-picker",
             component: () =>
               import("@/components/preview/datePickerPreview.vue"),
           },
           {
-            path: "time-picker",
+            path: "/time-picker",
             name: "time-picker",
             component: () =>
               import("@/components/preview/timePickerPreview.vue"),
           },
           {
-            path: "tree-view",
+            path: "/tree-view",
             name: "tree-view",
             component: () => import("@/components/preview/treeViewPreview.vue"),
           },
           {
-            path: "tri-state-checkbox",
+            path: "/tri-state-checkbox",
             name: "tri-state-checkbox",
             component: () =>
               import("@/components/preview/triStateCheckboxPreview.vue"),
