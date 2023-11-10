@@ -14,6 +14,7 @@
         :readonly="readonly"
         :min="minimum"
         :max="maximum"
+        :multiple="multiple"
       />
     </v-col>
     <v-col cols="12" md="6">
@@ -64,6 +65,12 @@
         density="compact"
         label="Show adjacent months"
         v-model="showAdjacentMonths"
+      />
+      <v-checkbox
+        hide-details
+        density="compact"
+        label="Multiple"
+        v-model="multiple"
       />
       <v-checkbox
         hide-details

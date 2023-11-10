@@ -1618,10 +1618,10 @@ vite@^3.0.9:
   optionalDependencies:
     fsevents "~2.3.2"
 
-vue-3-material-date-picker@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/vue-3-material-date-picker/-/vue-3-material-date-picker-0.0.6.tgz#0693341a1909799b62c2e88a8efd5de97bf21e90"
-  integrity sha512-nUWtRtCYmJOBRIevNtdgwe8RaKr/zfgQObnAQlXfVCqwW4Pggm/Mf6qBXtYDxA1B0huMFFhGAl6+tpsg/igEcw==
+vue-3-material-date-picker@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/vue-3-material-date-picker/-/vue-3-material-date-picker-0.0.7.tgz#27142962f5e5dac35de07fe7f5fb40de1a228f78"
+  integrity sha512-eKwsqIHJZFzBJO9d3C6NloECzs423+26rp4sqz9FmkPANmAHqFrxa+zh6IrxNfW2ZhSPctA1utsmslxTRV7QEQ==
   dependencies:
     "@vueuse/core" "^10.1.2"
     sass "^1.62.1"
