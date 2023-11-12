@@ -463,10 +463,10 @@ array-union@^2.1.0:
   resolved "https://registry.yarnpkg.com/array-union/-/array-union-2.1.0.tgz#b798420adbeb1de828d84acd8a2e23d3efe85e8d"
   integrity sha512-HGyxoOTYUyCM6stUe6EJgnd4EoewAI7zMdfqO+kGjnlZmBDz/cR5pf8r/cR4Wq60sL/p0IkcjUEEPwS3GFrIyw==
 
-avatar-editor@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/avatar-editor/-/avatar-editor-0.0.2.tgz#cfae6f77e44cd0b0374b7386df21e9175d85f79c"
-  integrity sha512-XiSiRuQXN+6qZ39Lp6OZkjmIardeL7w/USQf1bRSdT5KEKJCxcaegrnkPKOHMM6UX5Z8wL2Hxj/69ikaOpEeMA==
+avatar-editor@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/avatar-editor/-/avatar-editor-0.0.3.tgz#a4d3c80e19b8d88ed7a85b611125186db1420109"
+  integrity sha512-KSc9jnTi49JsgYQ8QXWvEoKyornOZ7q9G7D3AopkpbxPStivzxhyByHI1p41gP4mLmXtHFDqP01fTaXm974v4A==
   dependencies:
     "@vueuse/core" "^10.1.2"
     sass "^1.62.1"
