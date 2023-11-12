@@ -595,10 +595,10 @@ deep-is@^0.1.3:
   resolved "https://registry.yarnpkg.com/deep-is/-/deep-is-0.1.4.tgz#a6f2dce612fadd2ef1f519b73551f17e85199831"
   integrity sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==
 
-degree-picker@^0.0.15:
-  version "0.0.15"
-  resolved "https://registry.yarnpkg.com/degree-picker/-/degree-picker-0.0.15.tgz#07de592d227c25016d0f8ed32b059975853f3a60"
-  integrity sha512-MyRJXzefrj+3kyXT/23vHkT86ySp8NaTYDmmsnlqCOOJfVaOpSn0eYqSxPSkvSsQznVmqxQzq9eH31rn/72+Eg==
+degree-picker@^0.0.22:
+  version "0.0.22"
+  resolved "https://registry.yarnpkg.com/degree-picker/-/degree-picker-0.0.22.tgz#3351d2d726addf295bcd55d51024edd25740c7c9"
+  integrity sha512-ivcEyHQn2BxpINXNEhrV59f5R2y/Z/YrnjgYQKVfG1VRcKTavtLeMIGVePA59LmacV43jYXFyUvul8Dc4lOoxQ==
   dependencies:
     vue "^3.2.47"
 
@@ -1682,10 +1682,10 @@ vue-tree-view@^0.0.12:
     "@vueuse/core" "^10.1.2"
     vue "^3.2.47"
 
-vue-tri-state-checkbox@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/vue-tri-state-checkbox/-/vue-tri-state-checkbox-0.0.3.tgz#392469e5dc5c34031462faf68e4e14845e310926"
-  integrity sha512-KLU2BkGQ/ZYs43mkLpZmVKOssmMJlaYesJj8Q3OAGeONONTTvI3+0QPgBYtTsdQ60sWmCYhJpsnJ2TlJWmH4Dg==
+vue-tri-state-checkbox@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/vue-tri-state-checkbox/-/vue-tri-state-checkbox-0.0.4.tgz#77dc159b46ebadc48eb09a7d194e86a20c7e6542"
+  integrity sha512-5bz8Jwzk4tUyamn9o4kA9G44u3XG5FBfK9QGq+9Jnilko1gsA63ti7B1Tt0t2mlkRTxL+4QzDfK3OmYalrcqlw==
   dependencies:
     sass "^1.62.1"
     vue "^3.2.47"
