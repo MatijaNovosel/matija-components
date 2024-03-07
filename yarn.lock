@@ -1674,10 +1674,10 @@ vue-template-compiler@^2.7.14:
     de-indent "^1.0.2"
     he "^1.2.0"
 
-vue-tree-view@^0.0.12:
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/vue-tree-view/-/vue-tree-view-0.0.12.tgz#ec4500a4537f172348372b90d5717d81249feed2"
-  integrity sha512-nsmXhniv+FkTgkqUnlE4KtoGeIk4yytSotkVaAG1oiHj45X7l4IpnbnnhEqWbUl9s3tORNquqAILeEYlk8xP/A==
+vue-tree-view@^0.0.13:
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/vue-tree-view/-/vue-tree-view-0.0.13.tgz#8e35d4d224279d9fddcd8620c2ad0aa5d201cdd3"
+  integrity sha512-qbTWHsVDtj2pGbqzjZ1bmU43WJspfBA0EDR/TQNTULbQcAyy/1Mn8GCHW2NFfKhYc/D5IX4XyYBAxggJZNFMAQ==
   dependencies:
     "@vueuse/core" "^10.1.2"
     vue "^3.2.47"
