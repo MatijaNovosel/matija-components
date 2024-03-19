@@ -98,7 +98,7 @@ import codeSnippet from "../app/codeSnippet.vue";
 const date = ref(new Date().toISOString().substring(0, 10));
 const locale = ref("en-US");
 const minimum = ref("2020-08-05");
-const maximum = ref("2023-12-25");
+const maximum = ref("2025-12-25");
 const multiple = ref(false);
 const disabled = ref(false);
 const readonly = ref(false);

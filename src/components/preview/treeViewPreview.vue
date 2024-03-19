@@ -1,17 +1,30 @@
 <template>
   <v-row class="justify-center align-center items-center text-center">
     <v-col cols="12" md="6">
-      <matija-tree-view
-        class="mx-auto"
-        v-model="value"
-        :open-all="openAll"
-        :items="items"
-        :disabled="disabled"
-        :selectable="selectable"
-        :selection-mode="selectionMode"
-        :color="color"
-        :dense="dense"
-      />
+      <v-row>
+        <matija-tree-view
+          class="mx-auto"
+          v-model="valueFirst"
+          :open-all="openAll"
+          :items="items"
+          :disabled="disabled"
+          :selectable="selectable"
+          :selection-mode="selectionMode"
+          :color="color"
+          :dense="dense"
+        />
+        <matija-tree-view
+          class="mx-auto"
+          v-model="valueSecond"
+          :open-all="openAll"
+          :items="items"
+          :disabled="disabled"
+          :selectable="selectable"
+          :selection-mode="selectionMode"
+          :color="color"
+          :dense="dense"
+        />
+      </v-row>
     </v-col>
     <v-col cols="12" md="6">
       <code-snippet
@@ -22,8 +35,16 @@
         class="mt-3"
         density="compact"
         hide-details
-        label="Value"
-        :model-value="JSON.stringify(value)"
+        label="Value first"
+        :model-value="JSON.stringify(valueFirst)"
+        readonly
+      />
+      <v-text-field
+        class="mt-3"
+        density="compact"
+        hide-details
+        label="Value second"
+        :model-value="JSON.stringify(valueSecond)"
         readonly
       />
       <v-select
@@ -58,7 +79,8 @@
 import { ref } from "vue";
 import codeSnippet from "../app/codeSnippet.vue";
 
-const value = ref([]);
+const valueFirst = ref([]);
+const valueSecond = ref([]);
 const disabled = ref(false);
 const selectable = ref(true);
 const openAll = ref(true);
