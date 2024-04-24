@@ -3,7 +3,7 @@
     <v-col cols="12" md="6">
       <matija-date-picker
         class="mx-auto elevation-1"
-        :selected-items-text-formatter="(n) => `${n} dates selected`"
+        :selected-items-text-formatter="(n: number) => `${n} dates selected`"
         :first-day-of-week="1"
         :show-adjacent-months="showAdjacentMonths"
         :locale="locale"

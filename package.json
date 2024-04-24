@@ -15,7 +15,7 @@
     "matija-utils": "^1.0.29",
     "pinia": "^2.0.23",
     "roboto-fontface": "*",
-    "vue": "^3.2.38",
+    "vue": "^3.4.21",
     "vue-3-material-date-picker": "^1.1.1",
     "vue-material-time-picker": "^1.0.0",
     "vue-router": "^4.0.0",
