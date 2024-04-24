@@ -5,6 +5,16 @@ import { TimePicker } from "vue-material-time-picke";
 import { TreeView } from "vue-tree-view";
 import { TriStateCheckbox } from "vue-tri-state-checkbox";
 
+declare module "*.vue" {
+  import type { DefineComponent } from "vue";
+  const component: DefineComponent<
+    Record<string, unknown>,
+    Record<string, unknown>,
+    any
+  >;
+  export default component;
+}
+
 declare module "@vue/runtime-core" {
   export interface GlobalComponents {
     DegreePicker: typeof DegreePicker;
