@@ -1,25 +1,15 @@
 import vue from "@vitejs/plugin-vue";
-import { fileURLToPath, URL } from "node:url";
+import path from "path";
 import { defineConfig } from "vite";
-import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
+import vuetify from "vite-plugin-vuetify";
 
+// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    vue({
-      template: { transformAssetUrls },
-    }),
-    vuetify({
-      autoImport: true,
-    }),
-  ],
-  define: { "process.env": {} },
+  plugins: [vue(), vuetify({ autoImport: true })],
   resolve: {
+    extensions: [".mjs", ".js", ".ts", ".jsx", ".tsx", ".json", ".vue"],
     alias: {
-      "@": fileURLToPath(new URL("./src", import.meta.url)),
+      "@": path.resolve(__dirname, "./src"),
     },
-    extensions: [".js", ".json", ".jsx", ".mjs", ".ts", ".tsx", ".vue"],
-  },
-  server: {
-    port: 3000,
   },
 });
