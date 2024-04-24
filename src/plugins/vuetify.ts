@@ -1,13 +1,9 @@
 import "@mdi/font/css/materialdesignicons.css";
-import { VDataTable } from "vuetify/labs/VDataTable";
 import "vuetify/styles";
 
 import { createVuetify } from "vuetify";
 
 export default createVuetify({
-  components: {
-    VDataTable,
-  },
   defaults: {
     VDataTable: {
       fixedHeader: true,

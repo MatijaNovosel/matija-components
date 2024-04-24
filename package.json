@@ -16,7 +16,7 @@
     "pinia": "^2.0.23",
     "roboto-fontface": "*",
     "vue": "^3.2.38",
-    "vue-3-material-date-picker": "^1.0.0",
+    "vue-3-material-date-picker": "^1.1.1",
     "vue-material-time-picker": "^1.0.0",
     "vue-router": "^4.0.0",
     "vue-tree-view": "^1.4.0",
