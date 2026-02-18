@@ -86,9 +86,9 @@ const selectable = ref(true);
 const openAll = ref(true);
 const dense = ref(true);
 const color = ref("#FF891D");
-const selectionMode = ref<"leaf" | "independent">("leaf");
+const selectionMode = ref<"classic" | "independent">("classic");
 
-const selectionModeItems = ["leaf", "independent"];
+const selectionModeItems = ["classic", "independent"];
 
 const items = [
   {

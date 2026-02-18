@@ -19,7 +19,7 @@
     "vue-3-material-date-picker": "^1.1.1",
     "vue-material-time-picker": "^1.0.0",
     "vue-router": "^4.0.0",
-    "vue-tree-view": "^1.4.0",
+    "vue-tree-view": "^1.6.0",
     "vue-tri-state-checkbox": "^1.0.0",
     "vuetify": "^3.1.12",
     "webfontloader": "^1.0.0"
