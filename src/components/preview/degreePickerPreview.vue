@@ -19,9 +19,17 @@
         class="mt-4"
         density="compact"
         hide-details
-        label="Value"
+        label="Step"
         v-model="state.degrees"
         readonly
+      />
+      <v-text-field
+        class="mt-4"
+        density="compact"
+        hide-details
+        label="Snap step"
+        v-model="state.snapStep"
+        type="number"
       />
       <v-checkbox
         class="mt-2"
@@ -50,6 +58,7 @@ import codeSnippet from "../app/codeSnippet.vue";
 
 const state = reactive({
   degrees: 0,
+  snapStep: 15,
   disabled: false,
   readonly: false,
   activeColor: "#FF891D",
